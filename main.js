@@ -9,7 +9,7 @@ function handleNoButtonClick() {
 
     let btnYes = document.getElementById("btn_yes");
     let currentSizeYes = parseFloat(window.getComputedStyle(btnYes).getPropertyValue("font-size"));
-    let newSizeYes = currentSizeYes * 1.4; 
+    let newSizeYes = currentSizeYes * 1.6; 
 
     btnYes.style.fontSize = newSizeYes + "px";
 
@@ -23,7 +23,8 @@ function handleNoButtonClick() {
 
 function handleYesButtonClick() {
     document.getElementById("content").innerHTML = '<img src="http://tinyurl.com/2xzxmdn4" alt="GIF">' 
-    + '<br><img src="http://tinyurl.com/292a6qut" alt="Image">' + '<br><h1>Te amo, amorcito! ❤️</h1><h4>Gracias por no decir que no :3 Tu regalo está pendiente... #Sorpresitas</h4>';
+    + '<br><img src="http://tinyurl.com/292a6qut" alt="Image" class="half-size-image">' 
+    + '<br><h1>Te amo, amorcito! ❤️</h1><h4>Gracias por no decir que no :3<br>Tu regalo está pendiente... #Sorpresitas</h4>';
 }
 
 document.getElementById("btn_no").addEventListener("click", handleNoButtonClick);
