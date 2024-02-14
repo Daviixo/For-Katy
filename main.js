@@ -3,9 +3,15 @@ let clickCount = 0;
 function handleNoButtonClick() {
     let btnNo = document.getElementById("btn_no");
     let currentSize = parseFloat(window.getComputedStyle(btnNo).getPropertyValue("font-size"));
-    let newSize = currentSize * 0.8; // Reduce el tamaño actual en un 20%
+    let newSize = currentSize * 0.8; 
 
     btnNo.style.fontSize = newSize + "px";
+
+    let btnYes = document.getElementById("btn_yes");
+    let currentSizeYes = parseFloat(window.getComputedStyle(btnYes).getPropertyValue("font-size"));
+    let newSizeYes = currentSizeYes * 2.2; 
+
+    btnYes.style.fontSize = newSizeYes + "px";
 
     clickCount++;
 
