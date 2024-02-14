@@ -9,7 +9,7 @@ function handleNoButtonClick() {
 
     let btnYes = document.getElementById("btn_yes");
     let currentSizeYes = parseFloat(window.getComputedStyle(btnYes).getPropertyValue("font-size"));
-    let newSizeYes = currentSizeYes * 2.2; 
+    let newSizeYes = currentSizeYes * 1.4; 
 
     btnYes.style.fontSize = newSizeYes + "px";
 
